@@ -1,4 +1,4 @@
-package ActivityStaterCode;
+package ActivityStarterCode;
 
 import org.junit.Test;
 

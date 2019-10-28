@@ -4,7 +4,7 @@
  * @author Abigail Marsh, Fall 2019
  */
 
-package ActivityStaterCode;
+package ActivityStarterCode;
 
 import java.util.Scanner;
 
