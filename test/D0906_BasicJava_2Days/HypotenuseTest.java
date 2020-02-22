@@ -1,4 +1,4 @@
-package BasicJava;
+package D0906_BasicJava_2Days;
 
 import org.junit.jupiter.api.Test;
 

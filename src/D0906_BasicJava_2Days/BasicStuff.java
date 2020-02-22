@@ -1,18 +1,24 @@
-package BasicJava;
+package D0906_BasicJava_2Days;
 
+/**
+ * Comp127 first activity ever, created by Adam Yao on 2019.9.6
+ * <p>
+ * Re-visited and edited by Adam on 2020.2.22
+ */
 public class BasicStuff {
     public static void main(String[] args) {
         int age0;
-        int age1;
-        age0 = 18;  // setting my age
-        age1 = 18;  // setting my partner's age
+        double age1;
+        age0 = 18;  // my age
+        age1 = 17;  // my partner's age
 
-        int sumOfAges = age0 + age1;
+        double sumOfAges = age0 + age1;
 
         System.out.println("We are " + age0 + " and " + age1 + " years old!");
         System.out.println("The sum of our ages is " + sumOfAges + "!");
         System.out.println("The sum of our ages is " + (age0 + age1) + "!");
-                    // to prevent the mistake, there should be a pair of parentheses outside the sum of age0 and age1.
+        // to prevent the mistake, there should be a pair of parentheses outside the sum of age0 and age1.
+
 
         System.out.println(6/3);
         System.out.println(6/4);
