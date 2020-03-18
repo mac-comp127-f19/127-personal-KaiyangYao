@@ -1,4 +1,4 @@
-package listPractice;
+package D0916_listPractice;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +7,8 @@ import java.util.List;
  * Assorted List formatting utilities.
  *
  * YOUR TASK: Implement each method and make sure the tests pass.
+ *
+ * Re-visited and edited by Adam Yao on 2020.3.18
  */
 @SuppressWarnings({"StringConcatenationInLoop", "WeakerAccess"})
 public class ListFormatting {

@@ -3,7 +3,7 @@ package D0906_BasicJava_2Days;
 /**
  * Comp127 first activity ever, created by Adam Yao on 2019.9.6
  * <p>
- * Re-visited and edited by Adam on 2020.2.22
+ * Re-visited and edited by Adam Yao on 2020.2.22
  */
 public class BasicStuff {
     public static void main(String[] args) {

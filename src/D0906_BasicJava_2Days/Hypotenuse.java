@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Comp127 second activity, created by Adam Yao on 2019.9.9
  * <p>
- * Re-visited and edited by Adam on 2020.2.22
+ * Re-visited and edited by Adam Yao on 2020.2.22
  */
 public class Hypotenuse {
     public static double calculateHypotenuse(double length1, double length2){

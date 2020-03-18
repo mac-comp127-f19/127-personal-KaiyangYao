@@ -2,6 +2,11 @@ package D0906_BasicJava_2Days;
 
 import java.util.Scanner;
 
+/**
+ * Determine odd / even activity
+ * <p>
+ * Re-visited and edited by Adam Yao on 2020.2.22
+ */
 public class OddEven {
 
     public static boolean isOdd(int number) {
