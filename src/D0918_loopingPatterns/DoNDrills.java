@@ -2,7 +2,7 @@ package D0918_loopingPatterns;
 
 /**
  * Looping activities.
- * <p>
+ *
  * Re-visited and edited by Adam Yao on 2020.3.18
  */
 public class DoNDrills {

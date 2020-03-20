@@ -1,4 +1,4 @@
-package ActivityStarterCode.basicClasses;
+package D1002_inkblotDrawing;
 
 import comp127graphics.CanvasWindow;
 import comp127graphics.Line;
@@ -19,6 +19,7 @@ public class InkBlot {
         InkBlot ib = new InkBlot();
 
         ib.generateInkBlot();
+        // ib.saveInkBlot("1.png");
     }
 
     /**
@@ -27,7 +28,7 @@ public class InkBlot {
      * draw on.
      */
     public InkBlot() {
-        canvas = new CanvasWindow("InkBlot", 300, 300);
+        canvas = new CanvasWindow("InkBlot", 500, 500);
     }
 
     /**
@@ -36,21 +37,31 @@ public class InkBlot {
      * components (red, green, blue)
      */
     public void generateInkBlot() {
-        // TODO: fill in this method according to the activity instructions.
-        RandomWalk X = new RandomWalk(150);
-        RandomWalk Y = new RandomWalk(150);
-        RandomWalk R = new RandomWalk(10);
-        RandomWalk G = new RandomWalk(50);
-        RandomWalk B = new RandomWalk(70);
+        // fill in this method according to the activity instructions.
+        RandomWalk x = new RandomWalk(150, 0, 500);
+        RandomWalk y = new RandomWalk(150, 0, 500);
 
-        for(int i=0; i<15000; i++){
-            canvas.add(advance(X,Y));
-            canvas.add(mirror(advance(X,Y)));
+        RandomWalk red = new RandomWalk(100, 0, 255);
+        RandomWalk green = new RandomWalk(40, 0, 255);
+        RandomWalk blue = new RandomWalk(200, 0, 255);
+
+        for (int i = 0; i < 50000; i++) {
+            Line line1 = advance(x, y);
+            Line line2 = mirror(line1);
+
+            Color lineColor = getColor(red, green, blue);
+            line1.setStrokeColor(lineColor);
+            line2.setStrokeColor(lineColor);
+
+            canvas.add(line1);
+            canvas.add(line2);
+
+            // Adjusting drawing speed
+            // canvas.pause(3);
+            // canvas.draw();
         }
-
-
-
     }
+
 
     /**
      * Turns three random walk objects into a Color.
@@ -85,7 +96,7 @@ public class InkBlot {
      * Note, the file type will be a "png" (portable network graphic) image.
      * Therefore it is recommended your filename ends with ".png"
      *
-     * Files will be written in your comp124-s18 directory (the same directory
+     * Files will be written in your comp127-f19 directory (the same directory
      * that new modules check-out to).
      * @param fileName - the name of the file to write to.
      */
